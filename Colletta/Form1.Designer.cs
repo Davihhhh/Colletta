@@ -35,6 +35,8 @@
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.textBoxQuota = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.buttonNome = new System.Windows.Forms.Button();
+            this.buttonQuota = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAggiungi
@@ -79,17 +81,18 @@
             this.buttonTotale.TabIndex = 4;
             this.buttonTotale.Text = "Totale";
             this.buttonTotale.UseVisualStyleBackColor = true;
+            this.buttonTotale.Click += new System.EventHandler(this.buttonTotale_Click);
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(22, 34);
+            this.textBoxNome.Location = new System.Drawing.Point(22, 56);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(100, 23);
             this.textBoxNome.TabIndex = 5;
             // 
             // textBoxQuota
             // 
-            this.textBoxQuota.Location = new System.Drawing.Point(208, 34);
+            this.textBoxQuota.Location = new System.Drawing.Point(208, 56);
             this.textBoxQuota.Name = "textBoxQuota";
             this.textBoxQuota.Size = new System.Drawing.Size(100, 23);
             this.textBoxQuota.TabIndex = 6;
@@ -98,15 +101,38 @@
             // 
             this.listView1.Location = new System.Drawing.Point(550, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(238, 426);
+            this.listView1.Size = new System.Drawing.Size(447, 426);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // buttonNome
+            // 
+            this.buttonNome.Enabled = false;
+            this.buttonNome.Location = new System.Drawing.Point(22, 27);
+            this.buttonNome.Name = "buttonNome";
+            this.buttonNome.Size = new System.Drawing.Size(75, 23);
+            this.buttonNome.TabIndex = 8;
+            this.buttonNome.Text = "Nome";
+            this.buttonNome.UseVisualStyleBackColor = true;
+            // 
+            // buttonQuota
+            // 
+            this.buttonQuota.Enabled = false;
+            this.buttonQuota.Location = new System.Drawing.Point(208, 27);
+            this.buttonQuota.Name = "buttonQuota";
+            this.buttonQuota.Size = new System.Drawing.Size(75, 23);
+            this.buttonQuota.TabIndex = 9;
+            this.buttonQuota.Text = "Quota";
+            this.buttonQuota.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1009, 450);
+            this.Controls.Add(this.buttonQuota);
+            this.Controls.Add(this.buttonNome);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBoxQuota);
             this.Controls.Add(this.textBoxNome);
@@ -131,5 +157,7 @@
         private TextBox textBoxNome;
         private TextBox textBoxQuota;
         private ListView listView1;
+        private Button buttonNome;
+        private Button buttonQuota;
     }
 }
