@@ -31,7 +31,6 @@
             this.buttonAggiungi = new System.Windows.Forms.Button();
             this.buttonElimina = new System.Windows.Forms.Button();
             this.buttonModifica = new System.Windows.Forms.Button();
-            this.buttonTutteLeQuote = new System.Windows.Forms.Button();
             this.buttonTotale = new System.Windows.Forms.Button();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.textBoxQuota = new System.Windows.Forms.TextBox();
@@ -70,16 +69,6 @@
             this.buttonModifica.Text = "Modifica";
             this.buttonModifica.UseVisualStyleBackColor = true;
             this.buttonModifica.Click += new System.EventHandler(this.buttonModifica_Click);
-            // 
-            // buttonTutteLeQuote
-            // 
-            this.buttonTutteLeQuote.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTutteLeQuote.Location = new System.Drawing.Point(407, 388);
-            this.buttonTutteLeQuote.Name = "buttonTutteLeQuote";
-            this.buttonTutteLeQuote.Size = new System.Drawing.Size(125, 30);
-            this.buttonTutteLeQuote.TabIndex = 3;
-            this.buttonTutteLeQuote.Text = "Tutte le quote";
-            this.buttonTutteLeQuote.UseVisualStyleBackColor = true;
             // 
             // buttonTotale
             // 
@@ -122,7 +111,6 @@
             this.Controls.Add(this.textBoxQuota);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.buttonTotale);
-            this.Controls.Add(this.buttonTutteLeQuote);
             this.Controls.Add(this.buttonModifica);
             this.Controls.Add(this.buttonElimina);
             this.Controls.Add(this.buttonAggiungi);
@@ -139,7 +127,6 @@
         private Button buttonAggiungi;
         private Button buttonElimina;
         private Button buttonModifica;
-        private Button buttonTutteLeQuote;
         private Button buttonTotale;
         private TextBox textBoxNome;
         private TextBox textBoxQuota;
